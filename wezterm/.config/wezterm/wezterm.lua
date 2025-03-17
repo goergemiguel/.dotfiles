@@ -1,0 +1,27 @@
+local wezterm = require("wezterm")
+local config = wezterm.config_builder()
+
+config.color_scheme = "Catppuccin Mocha"
+
+config.font = wezterm.font("JetBrains Mono", { weight = "Medium" })
+config.font_size = 14
+
+config.hide_tab_bar_if_only_one_tab = true
+config.enable_tab_bar = false
+config.use_fancy_tab_bar = false
+
+config.keys = {
+
+	-- Override key bindings to prevent creating new tabs
+	{ key = "t", mods = "CMD", action = wezterm.action.DisableDefaultAssignment },
+	{ key = "t", mods = "CTRL|SHIFT", action = wezterm.action.DisableDefaultAssignment },
+}
+
+config.window_padding = {
+	left = 10,
+	right = 10,
+	top = 10,
+	bottom = 10,
+}
+
+return config
