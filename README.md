@@ -14,5 +14,5 @@ Following this [guide](https://medium.com/@jacksmithxyz/git-symlinks-and-gnu-sto
 With stow installed, simply run
 
 ```
-stow .
+stow -t ~/.config .
 ```
