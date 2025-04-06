@@ -1,5 +1,3 @@
-source /usr/share/cachyos-fish-config/cachyos-config.fish
-
 # overwrite greeting
 # potentially disabling fastfetch
 #function fish_greeting
@@ -13,3 +11,4 @@ alias gp='git push'
 alias gpf='git push --force'
 alias gs='git status'
 alias gl='git log'
+alias ll='ls -l -a'
