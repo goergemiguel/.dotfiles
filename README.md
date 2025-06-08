@@ -9,13 +9,11 @@ Following this [guide](https://medium.com/@jacksmithxyz/git-symlinks-and-gnu-sto
 - tmux
 - wezterm
 - Tmux package manager (TPM)
+- stow
 
 > PS: clone Tmux TPM to ~/.config/tmux/plugins/tpm
 
 ## Installing on new machine
 
-With stow installed, simply run
-
-```
-stow .
-```
+1. Clone branch to Home directory
+2. Inside `.dotfiles` directory, run `stow .`
