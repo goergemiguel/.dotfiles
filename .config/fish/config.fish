@@ -4,6 +4,10 @@
 #    # smth smth
 #end
 
+set -gx PATH /opt/homebrew/bin $PATH
+
+set -x GPG_TTY (tty)
+
 # Commonly used git commands
 alias ga='git add'
 alias gc='git commit -m'
